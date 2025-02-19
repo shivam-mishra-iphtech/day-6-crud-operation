@@ -1,4 +1,6 @@
+
 <?php
+
 require 'db_connection.php';
 ?>
 
@@ -118,8 +120,10 @@ require 'db_connection.php';
     </style>
 </head>
 <body>
+    
     <div class="container">
         <div class="header">
+       
             <h1>User Contact List</h1>
         </div>
         <div class="table-wrapper">
@@ -169,7 +173,7 @@ require 'db_connection.php';
 
 
                             <td class="icon">
-                            <a href="" title="Edit" style="color: gray; text-decoration: none;">
+                            <a href="message_update.php?id=<?php echo urlencode($row['id']); ?>" title="Edit" style="color: gray; text-decoration: none;">
                                     <i class="fa-solid fa-pen-to-square" style="color: gray;"></i>
                                 </a>
 

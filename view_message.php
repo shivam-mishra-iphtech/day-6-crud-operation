@@ -1,6 +1,7 @@
 <?php
 
 require 'db_connection.php';
+require 'header_navbar.php';
 
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $id = $_GET['id'];
@@ -168,3 +169,10 @@ else{
     </div>  
 </body>
 </html>
+
+
+
+
+
+
+
